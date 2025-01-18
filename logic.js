@@ -1,13 +1,32 @@
-// Parts
+const numbers = document.querySelectorAll('.numbers')
+const len = numbers.length
 
-// 1. Creating visuals for button clicks
-// Going to be just simply changing colours and adding pointer when hovering over it
+console.log(len)
 
-//2. Making screen change on button click
-// A. Store and update text content from each click
-// B. THen Changing text content inside the screen upon button click.
+const screen1 = document.getElementById('screen'); // Selects the element with id "screen"
+console.log(screen1.textContent); // Outputs: Hello
 
-// 3. Evaluating expression
-//A. Store text content in a logical place (same or different from visual text content)?? Where
-//B. Evaluate it in a logical way.
+const screen=document.querySelector('#screen')
+console.log(screen)
+
+let displayvalue = "";
+const one = document.querySelector('#one')
+
+
+
+function oneclick() {
+displayvalue+="1";
+screen.textContent=displayvalue;
+}
+one.addEventListener('click',oneclick);
+
+
+//Traverse to do it for each button
+
+function numberclick(value) {}
+for (let i=0;i<numbers.length;i++) {
+    let button = numbers[i];
+    //button.addEventListener('click', numberclick())
+} // Syntax of for loop is: start of loop (once), boolean condition to execute block, end (every time)
+//button.addEventlistener('click', )
 
